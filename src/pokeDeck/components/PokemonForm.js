@@ -22,7 +22,7 @@ class PokemonForm extends React.Component {
         />
 
         <Input
-          name="description"
+          name="species"
           label="tell us about your new pokemon"
           value={this.props.pokemon.species}
           onChange={this.props.onChange}
