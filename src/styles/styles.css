@@ -1,0 +1,436 @@
+html, body, #root, .view, .view-wrapper, .stage {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10; }
+  header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    header ul li {
+      display: inline-block;
+      width: 33.25%;
+      text-align: center;
+      padding: 20px 0;
+      text-transform: uppercase;
+      color: white;
+      text-decoration: none;
+      border-right: thin white solid; }
+      header ul li a {
+        text-decoration: none;
+        color: inherit;
+        font-weight: 800; }
+
+.intro {
+  height: 100%;
+  width: 100%;
+  background: #C1425d;
+  position: relative; }
+  .intro .intro-mod {
+    height: 275px;
+    width: 450px;
+    padding: 90px 50px 15px 50px;
+    position: absolute;
+    background: #7e949c;
+    color: black;
+    text-align: center;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+    .intro .intro-mod h2 {
+      margin: 0 auto 10px auto;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 1.15em; }
+    .intro .intro-mod:before {
+      content: "";
+      position: absolute;
+      margin: auto;
+      height: 300px;
+      width: 100%;
+      top: -150px;
+      left: 0;
+      right: 0;
+      background: url("../images/poke-logo.png") no-repeat center;
+      background-size: contain; }
+    .intro .intro-mod .intro-input input {
+      width: calc(90% - 40px);
+      padding: 15px 20px;
+      margin: 0 auto 20px auto;
+      text-align: center;
+      border-radius: 5px; }
+    .intro .intro-mod .intro-choice {
+      width: 100%; }
+      .intro .intro-mod .intro-choice * {
+        width: 100%;
+        display: inline-block;
+        cursor: pointer;
+        padding: 20px 3.5px;
+        margin-bottom: 7.5px;
+        background: #3b4cca;
+        color: white;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 800; }
+
+.pokedex {
+  background: url("../images/pokedex-02.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative; }
+  .pokedex:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #d34a62;
+    margin: auto;
+    height: 45px;
+    width: 100%; }
+  .pokedex:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #d34a62;
+    height: 125px;
+    width: 37.5%; }
+  .pokedex .pokedex-view {
+    text-align: center;
+    background: url("../images/pokedex-03.png") no-repeat center;
+    background-size: contain;
+    height: 850px;
+    width: 650px;
+    padding: 0 50px;
+    position: absolute;
+    margin: auto;
+    top: -65px;
+    left: 0;
+    right: 0; }
+    .pokedex .pokedex-view .pokedex-wrapper {
+      padding-top: 100px; }
+      .pokedex .pokedex-view .pokedex-wrapper .dex-search {
+        height: 35%;
+        width: 92.5%;
+        margin: 80px auto 30px auto;
+        background: none; }
+        .pokedex .pokedex-view .pokedex-wrapper .dex-search .dex-search-btn {
+          color: white;
+          height: 50px;
+          border-radius: 5px;
+          width: 300px;
+          background: grey;
+          margin-bottom: 20px;
+          position: relative;
+          border-right: 2.5px solid #323a45;
+          border-bottom: 2.5px solid #323a45;
+          float: right; }
+        .pokedex .pokedex-view .pokedex-wrapper .dex-search .dex-searchbar {
+          width: 95%;
+          border-radius: 7.5px;
+          padding: 5px 2.5%;
+          height: 35px;
+          border: none; }
+      .pokedex .pokedex-view .pokedex-wrapper .dex-view {
+        width: 92.5%;
+        margin: auto; }
+        .pokedex .pokedex-view .pokedex-wrapper .dex-view .img-head {
+          background: transparent url("../images/pokedex-11.png") no-repeat center;
+          background-size: contain;
+          border-radius: 5px;
+          width: 290px;
+          padding: 0 17.5px;
+          height: 325px;
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 25px;
+          margin-bottom: 20px; }
+          .pokedex .pokedex-view .pokedex-wrapper .dex-view .img-head .img-view {
+            height: 200px;
+            width: 92.5%;
+            margin: 30.5px auto;
+            border-radius: 5px;
+            /* background: url('../images/pokedex-09.jpg') no-repeat center; */
+            background: white; }
+            .pokedex .pokedex-view .pokedex-wrapper .dex-view .img-head .img-view img {
+              width: auto;
+              height: 100%;
+              -webkit-filter: grayscale(100%);
+              filter: grayscale(100%); }
+        .pokedex .pokedex-view .pokedex-wrapper .dex-view .dex-ai-view {
+          display: inline-block;
+          width: 250px;
+          height: 325px;
+          vertical-align: top;
+          margin-bottom: 20px; }
+          .pokedex .pokedex-view .pokedex-wrapper .dex-view .dex-ai-view .ai-eye {
+            height: 145px;
+            background: url("../images/pokedex-08.png") no-repeat center;
+            background-size: contain;
+            margin-bottom: 25px;
+            width: 100%;
+            position: relative; }
+            .pokedex .pokedex-view .pokedex-wrapper .dex-view .dex-ai-view .ai-eye span {
+              display: none; }
+              .pokedex .pokedex-view .pokedex-wrapper .dex-view .dex-ai-view .ai-eye span .dex-loader {
+                height: 25px;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0; }
+              .pokedex .pokedex-view .pokedex-wrapper .dex-view .dex-ai-view .ai-eye span.active {
+                display: inline; }
+          .pokedex .pokedex-view .pokedex-wrapper .dex-view .dex-ai-view .ai-fx {
+            height: 65px;
+            width: 100%;
+            margin-bottom: 17.5px; }
+            .pokedex .pokedex-view .pokedex-wrapper .dex-view .dex-ai-view .ai-fx .btn {
+              display: inline-block;
+              width: 65px;
+              height: 65px;
+              margin: 0 7.5px;
+              border-radius: 7.5px;
+              border-right: 2.5px solid #323a45;
+              border-bottom: 2.5px solid #323a45;
+              background: green;
+              vertical-align: top; }
+              .pokedex .pokedex-view .pokedex-wrapper .dex-view .dex-ai-view .ai-fx .btn.red {
+                background: url("../images/pokedex-04.jpg") no-repeat center;
+                background-size: contain; }
+              .pokedex .pokedex-view .pokedex-wrapper .dex-view .dex-ai-view .ai-fx .btn.yellow {
+                background: url("../images/pokedex-05.jpg") no-repeat center;
+                background-size: contain; }
+              .pokedex .pokedex-view .pokedex-wrapper .dex-view .dex-ai-view .ai-fx .btn.green {
+                background: url("../images/pokedex-06.jpg") no-repeat center;
+                background-size: contain; }
+          .pokedex .pokedex-view .pokedex-wrapper .dex-view .dex-ai-view .grate {
+            width: 95%;
+            margin: auto;
+            background: url("../images/grate.png") no-repeat center;
+            background-size: contain;
+            height: 75px; }
+        .pokedex .pokedex-view .pokedex-wrapper .dex-view .dex-content-view {
+          padding: 22.5px 5%;
+          width: 90%;
+          border-radius: 5px;
+          height: 95px;
+          background: white;
+          overflow: hidden; }
+          .pokedex .pokedex-view .pokedex-wrapper .dex-view .dex-content-view .dex-content-viewport {
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+            overflow-x: hidden; }
+            .pokedex .pokedex-view .pokedex-wrapper .dex-view .dex-content-view .dex-content-viewport p {
+              font-size: 1.5em;
+              margin: 0; }
+
+.usr-deck {
+  background: url("../images/pokedexflip.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative; }
+  .usr-deck .usr-deck-view {
+    text-align: center;
+    background: url("../images/pokedex-13.png") no-repeat center;
+    background-size: contain;
+    height: 850px;
+    width: 650px;
+    padding: 0 50px;
+    position: absolute;
+    margin: auto;
+    top: -65px;
+    left: 0;
+    right: 0; }
+    .usr-deck .usr-deck-view .deck-wrapper {
+      padding-top: 50px;
+      text-align: right; }
+      .usr-deck .usr-deck-view .deck-wrapper .deck-sensors {
+        width: 50%;
+        margin: 95px 0 30px 30px; }
+        .usr-deck .usr-deck-view .deck-wrapper .deck-sensors .main-lght.lrg {
+          border: solid 7.5px #f4c867;
+          border-radius: 75px;
+          position: relative;
+          height: 47.5px;
+          width: 47.5px;
+          background: #fdd978;
+          display: inline-block;
+          float: left;
+          margin-top: 12.5px; }
+          .usr-deck .usr-deck-view .deck-wrapper .deck-sensors .main-lght.lrg:before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            height: 12.5px;
+            width: 12.5px;
+            border-radius: 25px;
+            background: white; }
+        .usr-deck .usr-deck-view .deck-wrapper .deck-sensors span {
+          display: inline-block;
+          margin-top: 35px; }
+          .usr-deck .usr-deck-view .deck-wrapper .deck-sensors span .main-lght {
+            height: 30px;
+            width: 30px;
+            border: solid 5px #7e949c;
+            display: inline-block;
+            border-radius: 50px;
+            margin: 0 6.5px;
+            vertical-align: baseline; }
+            .usr-deck .usr-deck-view .deck-wrapper .deck-sensors span .main-lght.green {
+              background: url("../images/pokedex-06.jpg") no-repeat center;
+              background-size: contain; }
+            .usr-deck .usr-deck-view .deck-wrapper .deck-sensors span .main-lght.grey {
+              background: url("../images/pokedex-09.jpg") no-repeat center;
+              background-size: cover; }
+      .usr-deck .usr-deck-view .deck-wrapper .deck-main-view {
+        width: 90%;
+        height: 270px;
+        background: white;
+        margin: 0 auto 30px auto;
+        border-radius: 15px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 20px 0; }
+        .usr-deck .usr-deck-view .deck-wrapper .deck-main-view .usr-deck-pokemon {
+          width: 85%;
+          padding: 5px 15px;
+          margin: auto;
+          background: grey;
+          color: white;
+          border-radius: 15px;
+          text-align: left; }
+          .usr-deck .usr-deck-view .deck-wrapper .deck-main-view .usr-deck-pokemon .pokemon-stats {
+            display: inline-block; }
+          .usr-deck .usr-deck-view .deck-wrapper .deck-main-view .usr-deck-pokemon .deck-actions {
+            display: inline-block;
+            float: right; }
+            .usr-deck .usr-deck-view .deck-wrapper .deck-main-view .usr-deck-pokemon .deck-actions * {
+              display: inline-block; }
+          .usr-deck .usr-deck-view .deck-wrapper .deck-main-view .usr-deck-pokemon .deck-desc {
+            margin: 0 0 20px 0; }
+      .usr-deck .usr-deck-view .deck-wrapper .deck-controller-view {
+        height: 200px;
+        width: 90%;
+        margin: auto; }
+        .usr-deck .usr-deck-view .deck-wrapper .deck-controller-view .btn-group {
+          width: 325px;
+          height: 100%;
+          margin-right: 45px;
+          display: inline-block;
+          vertical-align: top;
+          text-align: left; }
+          .usr-deck .usr-deck-view .deck-wrapper .deck-controller-view .btn-group span {
+            width: 100%; }
+            .usr-deck .usr-deck-view .deck-wrapper .deck-controller-view .btn-group span .blue-btn {
+              width: 65px;
+              height: 65px;
+              border-radius: 5px;
+              position: relative;
+              background: #62a0f5;
+              display: inline-block;
+              margin-right: 5px;
+              box-shadow: 5px 5px 0 #323a45; }
+            .usr-deck .usr-deck-view .deck-wrapper .deck-controller-view .btn-group span .red-rnd-btn {
+              width: 65px;
+              height: 65px;
+              border-radius: 80px;
+              position: relative;
+              display: inline-block;
+              vertical-align: top;
+              margin-right: 5px;
+              float: right;
+              background: url("../images/pokedex-04.jpg") no-repeat center;
+              background-size: contain;
+              box-shadow: 5px 5px 0 #323a45; }
+          .usr-deck .usr-deck-view .deck-wrapper .deck-controller-view .btn-group .lng-grey-btn {
+            background: #d0e0e6;
+            width: 100%;
+            height: 45px;
+            border-radius: 5px;
+            box-shadow: 4.5px 4.5px 0 #323a45;
+            margin-top: 30px;
+            margin-bottom: 25px; }
+          .usr-deck .usr-deck-view .deck-wrapper .deck-controller-view .btn-group .min-grey-btn {
+            width: 55%;
+            border-radius: 5px;
+            height: 25px;
+            background: #96a0a3;
+            box-shadow: 3px 3px 0 #323a45; }
+        .usr-deck .usr-deck-view .deck-wrapper .deck-controller-view .controller {
+          width: 215px;
+          background: url("../images/pokedex-12.png") no-repeat center;
+          background-size: contain;
+          height: 165px;
+          margin: 17.5px auto;
+          display: inline-block; }
+
+.dex-search {
+  height: 100%;
+  width: 100%;
+  background: #C1425d;
+  position: relative; }
+  .dex-search .dex-search-view {
+    height: 500px;
+    width: 400px;
+    padding: 15px 50px;
+    position: absolute;
+    background: #323a45;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+    .dex-search .dex-search-view .poke-form .form-field-wrapper {
+      margin-bottom: 25px;
+      text-align: left; }
+      .dex-search .dex-search-view .poke-form .form-field-wrapper label {
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-left: 35px;
+        margin-bottom: 25px; }
+      .dex-search .dex-search-view .poke-form .form-field-wrapper .field {
+        text-align: center;
+        margin-top: 7.5px; }
+        .dex-search .dex-search-view .poke-form .form-field-wrapper .field input {
+          width: calc(100% - 30px);
+          border-radius: 5px;
+          padding: 15px;
+          border: none;
+          margin: auto; }
+    .dex-search .dex-search-view .poke-form input[type="submit"] {
+      border: none;
+      font-family: inherit;
+      padding: 17.5px 20px;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-weight: 800;
+      width: 80%;
+      float: right;
+      margin-top: 17.5px;
+      box-shadow: 2.5px 2.5px 0 black; }
+
+/*# sourceMappingURL=styles.css.map */
